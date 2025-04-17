@@ -1,37 +1,107 @@
-
+/* style.css */
 body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    margin: 0;
-    padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #F4F3EE;
+  color: #003C43;
+  margin: 0;
+  padding: 0;
 }
+
 header, footer {
-    background-color: #003C43;
-    color: white;
-    text-align: center;
-    padding: 1rem;
+  background-color: #003C43;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
 }
-h1, h2 {
-    color: #135D66;
+
+nav a {
+  margin: 0 1rem;
+  color: #E3B448;
+  text-decoration: none;
+  font-weight: bold;
 }
-section {
-    padding: 2rem;
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  margin: 1rem 0;
 }
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    width: 300px;
-    margin: 2rem auto;
+
+main {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
 }
-input, button {
-    padding: 0.75rem;
-    font-size: 1rem;
-}
+
 button {
-    background-color: #77B0AA;
-    color: white;
-    border: none;
-    cursor: pointer;
+  background-color: #E3B448;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 280px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.service-box {
+  flex: 1;
+  min-width: 260px;
+  background-color: white;
+  padding: 1rem;
+  border: 2px solid #E3B448;
+  border-radius: 8px;
+}
+
+footer {
+  margin-top: 3rem;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  .services {
+    flex-direction: column;
+  }
+
+  .gallery img {
+    width: 90%;
+  }
 }
