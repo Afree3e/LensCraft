@@ -168,3 +168,9 @@ footer {
   border-radius: 6px;
 }
 
+.gallery img {
+  border-radius: 8px;
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+}
