@@ -159,4 +159,12 @@ footer {
   .gallery img {
     width: 90%;
   }
+
+.service-box img {
+  margin-bottom: 1rem;
 }
+
+.gallery img {
+  border-radius: 6px;
+}
+
