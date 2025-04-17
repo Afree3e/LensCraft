@@ -1,4 +1,13 @@
 /* Global Reset and Base Styles */
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -51,10 +60,12 @@ nav a:hover {
 
 /* Main Section */
 main {
+  flex: 1;
   padding: 2rem;
   max-width: 1000px;
-  margin: auto;
+  margin: 0 auto;
 }
+
 
 /* Buttons */
 button {
