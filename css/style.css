@@ -1,4 +1,10 @@
 /* Global Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html, body {
   height: 100%;
   min-height: 100vh;
@@ -7,20 +13,10 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
   font-family: 'Open Sans', sans-serif;
   background-color: #F4F3EE; /* Light Beige */
   color: #2C3E50; /* Dark Teal */
   line-height: 1.6;
-  padding-bottom: 3rem;
 }
 
 /* Typography */
@@ -120,6 +116,12 @@ input, textarea, select {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
 }
 
+.service-box img {
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  width: 100%;
+}
+
 /* Gallery */
 .gallery {
   display: flex;
@@ -133,6 +135,7 @@ input, textarea, select {
   height: 180px;
   object-fit: cover;
   border-radius: 8px;
+  max-width: 100%;
 }
 
 /* Footer */
@@ -141,7 +144,7 @@ footer {
   color: white;
   text-align: center;
   padding: 1.5rem 1rem;
-  margin-top: 3rem;
+  margin-top: auto;
 }
 
 /* Responsive Design */
@@ -159,18 +162,4 @@ footer {
   .gallery img {
     width: 90%;
   }
-
-.service-box img {
-  margin-bottom: 1rem;
-}
-
-.gallery img {
-  border-radius: 6px;
-}
-
-.gallery img {
-  border-radius: 8px;
-  object-fit: cover;
-  max-width: 100%;
-  height: auto;
 }
