@@ -37,6 +37,16 @@
     </form>
   </main>
 
+  <script>
+    document.querySelector("form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Thank you! Your account has been created.");
+      this.reset();
+    });
+  </script>
+  
+  
+  
   <footer>
     <p>&copy; 2025 LensCraft Studio</p>
   </footer>
