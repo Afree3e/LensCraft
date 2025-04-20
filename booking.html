@@ -44,6 +44,15 @@
     </form>
   </main>
 
+  <script>
+    document.getElementById("bookingForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Thank you! Your booking has been submitted.");
+      this.reset();
+    });
+  </script>
+  
+
   <footer>
     <p>&copy; 2025 LensCraft Studio</p>
   </footer>
